@@ -1,4 +1,4 @@
-package com.klef.jfsd.SpringCoreProject;
+package com.klef.jfsd.SpringLabExamProject;
 
 /**
  * Hello world!
