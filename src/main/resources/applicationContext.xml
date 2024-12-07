@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="empbean" class="com.klef.jfsd.exam.Employee">
+    <constructor-arg value="1001"></constructor-arg>
+    <constructor-arg value="Suresh"></constructor-arg>
+    <constructor-arg value="18000"></constructor-arg>
+    <constructor-arg value="CSE"></constructor-arg>
+    <constructor-arg>
+    <list>
+    <value>JAVA</value>
+    <value>PYTHON</value>
+    <value>C</value>    
+    </list>
+    </constructor-arg>
+    </bean>
+    
+    
+    <bean id="coursebean" class="com.klef.jfsd.exam.Course">
+    <property name="courseId" value="101"></property>
+    <property name ="courseName" value="JFSD"></property>
+    <property name ="credits" value="4"></property>
+    <property name ="instructor" ref="instructorbean"></property>
+    </bean>
+    
+    
+    <bean id="instructorbean" class="com.klef.jfsd.exam.Instructor">
+    <property name="instructorId" value="1234"></property>
+    <property name ="name" value="Venkat"></property>
+    <property name ="email" value="venkat@gmail.com"></property>
+    <property name ="phoneNumber" value="9654102387"></property>
+    </bean>
+    
+</beans>
